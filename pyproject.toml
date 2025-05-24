@@ -1,0 +1,23 @@
+[project]
+name = "claude4-autonomous-code-review"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic (>=0.52.0,<0.53.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "pathlib (>=1.0.1,<2.0.0)",
+    "typing-extensions (>=4.13.2,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "claude4_autonomous_code_review", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
